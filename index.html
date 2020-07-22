@@ -12,7 +12,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		
 		<!-- google webfont font replacement -->
-		<link rel='stylesheet' id='font-awesome-css'  href='font-awesome.min91d5.css?ver=5.4' type='text/css' media='all' />
+		<!-- <link rel='stylesheet' id='font-awesome-css'  href='font-awesome.min91d5.css?ver=5.4' type='text/css' media='all' /> -->
 		<link rel='stylesheet' id='lcb-css-main-css'  href='wp-content/plugins/lead-call-buttons/css/plugin-main91d5.css?ver=5.4' type='text/css' media='all' />
 		<link rel='stylesheet' id='avia-grid-css'  href='wp-content/themes/mnc/css/grid77ae.css?ver=2' type='text/css' media='all' />
 		<link rel='stylesheet' id='avia-base-css'  href='wp-content/themes/mnc/css/base77ae.css?ver=2' type='text/css' media='all' />
@@ -146,12 +146,12 @@
 					</div>
 				</div>
 
-				<video autoplay playsinline muted loop width="320" height="240" style="pointer-events: none;" >
+				<video loop="true" autoplay preload="auto" controls="controls" id="vid1" muted width="320" height="240" style="pointer-events: none;">
 				  <source src="movie1.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
 				
-				<video autoplay playsinline muted loop width="320" height="240" style="pointer-events: none;" >
+				<video loop="true" autoplay preload="auto" controls="controls" id="vid2" muted width="320" height="240" style="pointer-events: none;" >
 				  <source src="movie2.mp4" type="video/mp4">
 				  Your browser does not support the video tag.
 				</video>
@@ -331,7 +331,10 @@
 			}
 		</style>
 		<!--End Lead Call Buttons-->  
-
+		<script>
+		document.getElementById('vid1').play();
+		document.getElementById('vid2').play();
+		</script>
 		<script type='text/javascript' src='wp-content/themes/mnc/js/avia592e.js?ver=3'></script>
 		<script type='text/javascript' src='wp-content/themes/mnc/js/shortcodes592e.js?ver=3'></script>
 		<script type='text/javascript' src='wp-content/themes/mnc/js/aviapopup/jquery.magnific-popup.min77ae.js?ver=2'></script>
